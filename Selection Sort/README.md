@@ -1,7 +1,8 @@
-#### [22,27,16,2,18,6] SELECTION SORT
+## SELECTION SORT
+### [22,27,16,2,18,6] 
 
 Selection sort algoritmasında, dizideki en küçük elemanı bularak bu sayı ile dizinin başındaki elemanı yer değiştirerek dizimizi sıralarız ve dizimiz küçükten büyüğe sıralanmış olur.
-Big O değeri O(n^2) olmaıs nedeni ile quick sort ve merge sort algoritmaları ile karşılaştırıldığında daha düşük bir performansa sahiptir.
+Big O değeri O(n^2) olması nedeni ile quick sort ve merge sort algoritmaları ile karşılaştırıldığında daha düşük bir performansa sahiptir.
 
 Şimdi örnekteki dizi için adım adım selection sort algoritmaısnı uygulayalım:
 
