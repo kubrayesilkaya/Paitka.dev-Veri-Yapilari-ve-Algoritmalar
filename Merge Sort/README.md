@@ -13,10 +13,25 @@ kontrol edilmesi gereken eleman sayısını azaltan bir yaklaşmdır.
 
 Her bir bölünen parça için en küçük birime kadar tekrar bölme işlemi uygulanır :
 
-[16, 21, 11] :
-  [16] | [21, 11] :
-     [16] | [21] | [11]
+- [16, 21, 11] :
+
+  - [16] | [21, 11] :
+  
+     - [16] | [21] | [11]
  
-[8, 12, 22] :
-  [8] | [12, 22] :
-    [8] | [12] | [22]
+- [8, 12, 22] :
+
+  - [8] | [12, 22] :
+  
+    - [8] | [12] | [22]
+   
+Dizi en küçük birimlerine ayrıldıktan sonra elemanları karşılaştırarak tekrar sıralama aşamasına geçilir. Merge sort algoritmasındaki, selection sort algortimasına
+kıyas ile çok daha az sayıda sorgu yaparak dizimizi sıralayabiliyoruz. Küçük birimlere ayırdığımız diziyi, alt birimlerinden itibaren sıralamamız nedeni ile, birimleri kendi arasında karşılaştırırken sıralamaları göz önüne alarak daha az sorguya ihtiyaç duyarız.
+
+  - [16] | [21] | [11] ->  [16] | [11, 21] -> [11] | [16] | [21]  
+
+  - [8] | [12] | [22] ->   [8] | [12, 22]  -> [8] | [12] | [22]
+
+  - [11] | [16] | [21] , [8] | [12] | [22] -> [8, 11, 12, 16, 21, 22]
+
+  
